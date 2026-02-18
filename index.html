@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Líder Barbería | Oficial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root { --black: #050505; --gold: #c5a059; --white: #ffffff; }
+        body { background-color: var(--black); color: var(--white); font-family: 'Roboto', sans-serif; margin: 0; }
+        
+        /* Imagen de Fondo Inicial */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('ambiente.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 { font-family: 'Oswald', sans-serif; font-size: 3.5rem; letter-spacing: 5px; margin: 0; }
+
+        /* Sección Descripción */
+        .info { padding: 40px 20px; text-align: center; background: #111; }
+        .info p { font-size: 1.1rem; color: #bbb; max-width: 600px; margin: auto; }
+
+        /* Botón de Turnos */
+        .turno-container { padding: 40px; text-align: center; }
+        .btn-turno {
+            background: var(--gold);
+            color: black;
+            padding: 20px 40px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            display: inline-block;
+        }
+
+        /* Galería de Fotos Separadas */
+        .galeria { padding: 20px; display: flex; flex-direction: column; gap: 30px; align-items: center; }
+        .galeria img { width: 100%; max-width: 500px; border: 2px solid #222; border-radius: 5px; }
+        .galeria h2 { color: var(--gold); font-family: 'Oswald'; }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1>LÍDER</h1>
+        <p style="color: var(--gold)">BARBERÍA & ESTILO</p>
+    </section>
+
+    <section class="info">
+        <p>Cortes de alta calidad, ambiente profesional y atención personalizada. Vení a conocer el lugar donde el estilo es la prioridad.</p>
+    </section>
+
+    <section class="turno-container">
+        <a href="https://wa.me/+54 9 342 569-1812" class="btn-turno">AGENDAR TURNO POR WHATSAPP</a>
+    </section>
+
+    <section class="galeria">
+        <h2>NUESTROS CORTES</h2>
+        <img src="corte1.jpg" alt="Corte Lider 1">
+        <img src="corte2.jpg" alt="Corte Lider 2">
+        <h2 style="margin-top: 20px;">EL AMBIENTE</h2>
+        <img src="ambiente.jpg" alt="Local Lider">
+    </section>
+
+    <footer style="text-align: center; padding: 30px; color: #444; font-size: 0.8rem;">
+        © 2026 LÍDER BARBERÍA | SITIO SEGURO SSL
+    </footer>
+
+</body>
+</html>
